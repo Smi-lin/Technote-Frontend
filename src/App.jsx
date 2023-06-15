@@ -21,6 +21,7 @@ const App = () => {
       <Route path="/" element={<Layout />}>
         <Route index element={<Public />} />
         <Route path="login" element={<Login />} />
+
         {/* Protected Routes */}
 
         <Route element={<RequireAuth allowedRoles={[...Object.values(ROLES)]} />}>
